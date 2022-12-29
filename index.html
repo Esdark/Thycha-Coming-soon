@@ -66,6 +66,13 @@
     <!-- Theme master CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/helper.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/theme.css" />
+
+    <!-- ========== Start Animation css ========== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- ========== End Animation css ========== -->
   </head>
 
   <body style="overflow-y: scroll">
@@ -309,19 +316,35 @@
           >
             <!-- Begin page header caption -->
             <div class="page-header-caption2">
-              <h1 class="page-header-title2">THYCHA</h1>
+              <h1
+                class="page-header-title2 animate__animated animate__fadeInLeftBig animate__delay-1s"
+              >
+                THYCHA
+              </h1>
               <div class="page-header-sub-title-wrap">
-                <h2 class="page-header-sub-title2">Creatives</h2>
+                <h2
+                  class="page-header-sub-title2 animate__animated animate__fadeInLeftBig animate__delay-2s"
+                >
+                  Creatives
+                </h2>
               </div>
             </div>
             <!-- End page header caption -->
 
             <!-- Begin scroll down button -->
-            <a
+            <!-- <a
               href="#who-we-are"
               class="scroll-down sm-scroll"
               title="Scroll down"
-            ></a>
+            ></a> -->
+            <a href="#who-we-are" class="sm-scroll">
+              <div class="scrolldown2">
+                <div class="chevrons">
+                  <div class="chevrondown"></div>
+                  <div class="chevrondown"></div>
+                </div>
+              </div>
+            </a>
             <!-- End scroll down button -->
           </div>
           <!-- End page header image -->
@@ -366,8 +389,8 @@
                         phasellus. Fusce sapien, metus mi et libero enim sed
                         lorem.
                       </p>
-                      <a href="team.html" class="btn btn-primary btn-lg"
-                        >Meet Our Creative Team</a
+                      <a href="about-us.html" class="btn btn-primary btn-lg"
+                        >Get To Know Us</a
                       >
                     </div>
                   </div>
@@ -786,6 +809,7 @@
 
     <!-- Theme master JS -->
     <script src="assets/js/theme.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
     <!--==============================
 		///// Begin Google Analytics /////
