@@ -1234,7 +1234,18 @@ h6 {
   /* height handled by "theme.js" file (element percent height) */
   /* height: 935px !important; */
 }
-
+/* .thychalogohero {
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+  top: 20%;
+  max-width: 800px;
+  margin-right: 15px;
+  z-index: 3;
+} */
+.thychalogohero {
+  display: none;
+}
 /* page header image */
 .page-header-image {
   position: absolute;
@@ -1282,6 +1293,126 @@ h6 {
   line-height: 1;
   opacity: 0.85;
 }
+.page-header-title3 {
+  display: flex;
+  justify-content: flex-start;
+  flex: auto;
+  gap: 10px;
+  justify-content: baseline;
+  width: 100px;
+}
+@keyframes text-clip {
+  from {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+.t {
+  position: relative;
+  bottom: 0px;
+  width: 100px;
+  /* animation: t 1s; */
+  animation: t 0s 1s ease both,
+    text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+  animation-delay: 1ms;
+}
+@keyframes t {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.h {
+  position: relative;
+  bottom: -10px;
+  width: 100px;
+  animation: h 1s 1s ease both,
+    text-clip 2s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+  animation-delay: 5ms;
+}
+@keyframes h {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.y {
+  position: relative;
+  bottom: -30px;
+  width: 100px;
+  animation: y 2s 1s ease both,
+    text-clip 3s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+  animation-delay: 10ms;
+}
+@keyframes y {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.c {
+  position: relative;
+  bottom: -40px;
+  width: 100px;
+  animation: c 3s 1s ease both,
+    text-clip 4s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+  animation-delay: 15ms;
+}
+@keyframes c {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.ch {
+  position: relative;
+  bottom: -25px;
+  width: 100px;
+  animation: ch 4s 1s ease both,
+    text-clip 5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+  animation-delay: 20ms;
+}
+@keyframes ch {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.a {
+  position: relative;
+  bottom: -50px;
+  width: 100px;
+  animation: a 5s 1s ease both,
+    text-clip 6s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+  animation-delay: 25ms;
+}
+@keyframes a {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: none;
+  }
+}
+
 @media (max-width: 992px) {
   .page-header-title {
     font-size: 42px;
@@ -1289,8 +1420,14 @@ h6 {
   .page-header-title2 {
     font-size: 42px;
   }
+  .page-header-title3 {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
+  .page-header-image2 {
+    background-size: cover !important;
+  }
   .page-header-title {
     font-size: 28px;
     line-height: 0.9;
@@ -1299,8 +1436,40 @@ h6 {
     font-size: 28px;
     line-height: 0.9;
   }
+  .page-header-title3 {
+    display: none;
+  }
   .page-header-caption2 {
     text-align: left !important;
+  }
+  .thychalogohero {
+    position: relative;
+    top: 50px;
+    left: -70px !important;
+    padding: 50px;
+
+    animation: logoanime 2s;
+  }
+  @keyframes logoanime {
+    0% {
+      opacity: 0;
+    }
+
+    40% {
+      height: 10px;
+      opacity: 0.5;
+    }
+
+    80% {
+      transform: translate(-600px, 0);
+
+      opacity: 0.9;
+    }
+
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
   }
 }
 
