@@ -264,6 +264,7 @@ p {
 }
 @media (max-width: 768px) {
   #logo {
+    display: none;
   }
 }
 
@@ -1312,8 +1313,8 @@ h6 {
 
 .t {
   position: relative;
-  bottom: 0px;
-  width: 100px;
+  bottom: -25px;
+  width: 70px;
   /* animation: t 1s; */
   animation: t 0s 1s ease both,
     text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
@@ -1347,8 +1348,8 @@ h6 {
 
 .y {
   position: relative;
-  bottom: -30px;
-  width: 100px;
+  bottom: -40px;
+  width: 535px !important;
   animation: y 2s 1s ease both,
     text-clip 3s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
   animation-delay: 10ms;
@@ -1365,7 +1366,7 @@ h6 {
 .c {
   position: relative;
   bottom: -40px;
-  width: 100px;
+  width: 90px;
   animation: c 3s 1s ease both,
     text-clip 4s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
   animation-delay: 15ms;
@@ -1381,7 +1382,7 @@ h6 {
 
 .ch {
   position: relative;
-  bottom: -25px;
+  bottom: -10px;
   width: 100px;
   animation: ch 4s 1s ease both,
     text-clip 5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
@@ -1398,13 +1399,30 @@ h6 {
 
 .a {
   position: relative;
-  bottom: -50px;
+  bottom: -40px;
   width: 100px;
   animation: a 5s 1s ease both,
     text-clip 6s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
   animation-delay: 25ms;
 }
 @keyframes a {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: none;
+  }
+}
+.creative {
+  position: relative;
+  bottom: 0px;
+  left: 400px;
+  width: 200px;
+  animation: creative 5s 1s ease both,
+    text-clip 5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+  animation-delay: 25ms;
+}
+@keyframes creative {
   from {
     transform: translateX(-50%);
   }
@@ -1426,7 +1444,10 @@ h6 {
 }
 @media (max-width: 768px) {
   .page-header-image2 {
-    background-size: cover !important;
+    background-image: url(/assets/img/page-header/page-header-bg-thychamobile.jpg) !important;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .page-header-title {
     font-size: 28px;
