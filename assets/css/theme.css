@@ -9510,4 +9510,22 @@ input#footer-subscribe {
     opacity: 0.5;
   }
 }
+
+@media (max-width: 768px) {
+  .scrolldown2 {
+    top: 90%;
+    left: 45%;
+    --color: #808e38;
+    --sizeX: 30px;
+    --sizeY: 50px;
+    position: relative;
+    width: var(--sizeX);
+    height: var(--sizeY);
+    margin-left: var(sizeX / 2);
+    border: calc(var(--sizeX) / 10) solid var(--color);
+    border-radius: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+}
 /***** End Custom Scroll *****/
