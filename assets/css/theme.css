@@ -2292,7 +2292,7 @@ h6 {
   width: 40px;
   height: 23px;
   opacity: 0;
-  background: url(../img/arrow-right-dark.png) no-repeat center;
+  background: url(../img/arrow-right-dark.gif) no-repeat center;
   -webkit-transform: translateX(-10px);
   -moz-transform: translateX(-10px);
   -o-transform: translateX(-10px);
@@ -2664,7 +2664,7 @@ h6 {
   bottom: 0;
   left: 0;
   width: 80px;
-  background-image: url(../img/arrow-left-dark.png);
+  background-image: url(../img/arrow-left-dark.gif);
   background-color: #808e38;
   background-repeat: no-repeat;
   background-position: center;
@@ -2700,7 +2700,7 @@ h6 {
   bottom: 0;
   right: 0;
   width: 80px;
-  background-image: url(../img/arrow-right-dark.png);
+  background-image: url(../img/arrow-right-dark.gif);
   background-color: #808e38;
   background-repeat: no-repeat;
   background-position: center;
@@ -2897,7 +2897,7 @@ h6 {
   width: 40px;
   height: 23px;
   opacity: 0;
-  background: url(../img/arrow-right-dark.png) no-repeat center;
+  background: url(../img/arrow-right-dark.gif) no-repeat center;
   -webkit-transform: translateX(-10px);
   -moz-transform: translateX(-10px);
   -o-transform: translateX(-10px);
@@ -4384,7 +4384,7 @@ h6 {
   bottom: 0;
   left: 0;
   width: 80px;
-  background-image: url(../img/arrow-left-dark.png);
+  background-image: url(../img/arrow-left-dark.gif);
   background-color: #808e38;
   background-repeat: no-repeat;
   background-position: center;
@@ -4420,7 +4420,7 @@ h6 {
   bottom: 0;
   right: 0;
   width: 80px;
-  background-image: url(../img/arrow-right-dark.png);
+  background-image: url(../img/arrow-right-dark.gif);
   background-color: #808e38;
   background-repeat: no-repeat;
   background-position: center;
@@ -6652,12 +6652,12 @@ input.cart-plus-minus-box:focus {
   transition: all 0.3s ease-in-out;
 }
 .owl-carousel .owl-nav button.owl-prev {
-  background-image: url(../img/arrow-left-dark.png);
+  background-image: url(../img/arrow-left-dark.gif);
   background-repeat: no-repeat;
   background-position: center;
 }
 .owl-carousel .owl-nav button.owl-next {
-  background-image: url(../img/arrow-right-dark.png);
+  background-image: url(../img/arrow-right-dark.gif);
   background-repeat: no-repeat;
   background-position: center;
 }
