@@ -132,7 +132,9 @@ p {
   text-shadow: none;
   background: #808e38; /* Safari */
 }
-
+.bg-main {
+  background-color: #808e38 !important;
+}
 .cover {
   position: absolute;
   top: 0;
@@ -1553,6 +1555,10 @@ h6 {
   /* height handled by "theme.js" file */
   min-height: 300px;
 }
+
+/***** Page header shape css *****/
+
+/***** End Page header shape css *****/
 
 /* --------------------------------------------------- *
  * Isotope (more info: http://isotope.metafizzy.co/)
